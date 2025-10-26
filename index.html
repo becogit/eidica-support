@@ -3,25 +3,118 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Eidica Support</title>
+  <title>Eidica – Legal & Support</title>
   <style>
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
-      background-color: #fafafa;
-      color: #222;
-      text-align: center;
-      padding-top: 100px;
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
-    a {
-      color: #007aff;
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .container {
+      backdrop-filter: blur(16px) saturate(180%);
+      -webkit-backdrop-filter: blur(16px) saturate(180%);
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 20px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+      max-width: 520px;
+      width: 100%;
+      padding: 50px 40px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2em;
+      color: #222;
+      margin-bottom: 10px;
+    }
+
+    p.subtitle {
+      color: #555;
+      font-size: 1em;
+      margin-bottom: 30px;
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .link-card {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 22px;
+      border-radius: 15px;
       text-decoration: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      transition: all 0.3s ease;
       font-weight: 500;
+    }
+
+    .link-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
+    }
+
+    .icon {
+      font-size: 1.5em;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 35px;
+      color: #666;
+      font-size: 0.9em;
+    }
+
+    a.email {
+      color: #007aff;
+      font-weight: 600;
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    a.email:hover {
+      color: #0056d6;
     }
   </style>
 </head>
 <body>
-  <h1>Eidica Support</h1>
-  <p>For support, contact us at:<br>
-     <a href="mailto:eidicaapp@gmail.com">eidicaapp@gmail.com</a></p>
+  <div class="container">
+    <h1>📋 Eidica Legal & Support</h1>
+    <p class="subtitle">Official links and support for the Eidica app.</p>
+
+    <div class="links">
+      <a href="privacy-policy.html" class="link-card">
+        <span class="icon">🔒</span> Privacy Policy
+      </a>
+
+      <a href="terms-of-use.html" class="link-card">
+        <span class="icon">📜</span> Terms of Use
+      </a>
+
+      <a href="mailto:eidicaapp@gmail.com" class="link-card">
+        <span class="icon">✉️</span> Contact Support
+      </a>
+    </div>
+
+    <div class="footer">
+      © 2025 Eidica. All rights reserved.
+    </div>
+  </div>
 </body>
 </html>
